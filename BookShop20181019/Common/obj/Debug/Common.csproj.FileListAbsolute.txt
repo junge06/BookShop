@@ -1,0 +1,4 @@
+D:\C#workspace\BookShop20181019\Common\bin\Debug\Common.dll
+D:\C#workspace\BookShop20181019\Common\bin\Debug\Common.pdb
+D:\C#workspace\BookShop20181019\Common\obj\Debug\Common.dll
+D:\C#workspace\BookShop20181019\Common\obj\Debug\Common.pdb

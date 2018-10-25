@@ -1,0 +1,12 @@
+D:\C#workspace\BookShop20181019\DAL\bin\Debug\BookShop20181019.DAL.dll
+D:\C#workspace\BookShop20181019\DAL\bin\Debug\BookShop20181019.DAL.pdb
+D:\C#workspace\BookShop20181019\DAL\bin\Debug\BookShop20181019.DBUtility.dll
+D:\C#workspace\BookShop20181019\DAL\bin\Debug\BookShop20181019.Model.dll
+D:\C#workspace\BookShop20181019\DAL\bin\Debug\Maticsoft.Common.dll
+D:\C#workspace\BookShop20181019\DAL\bin\Debug\MySql.Data.dll
+D:\C#workspace\BookShop20181019\DAL\bin\Debug\System.Data.SQLite.dll
+D:\C#workspace\BookShop20181019\DAL\bin\Debug\BookShop20181019.DBUtility.pdb
+D:\C#workspace\BookShop20181019\DAL\bin\Debug\BookShop20181019.Model.pdb
+D:\C#workspace\BookShop20181019\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\C#workspace\BookShop20181019\DAL\obj\Debug\BookShop20181019.DAL.dll
+D:\C#workspace\BookShop20181019\DAL\obj\Debug\BookShop20181019.DAL.pdb

@@ -1,0 +1,4 @@
+D:\C#workspace\BookShop20181019\Model\bin\Debug\BookShop20181019.Model.dll
+D:\C#workspace\BookShop20181019\Model\bin\Debug\BookShop20181019.Model.pdb
+D:\C#workspace\BookShop20181019\Model\obj\Debug\BookShop20181019.Model.dll
+D:\C#workspace\BookShop20181019\Model\obj\Debug\BookShop20181019.Model.pdb

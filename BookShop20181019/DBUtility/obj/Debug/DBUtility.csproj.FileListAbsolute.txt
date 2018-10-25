@@ -1,0 +1,6 @@
+D:\C#workspace\BookShop20181019\DBUtility\bin\Debug\BookShop20181019.DBUtility.dll
+D:\C#workspace\BookShop20181019\DBUtility\bin\Debug\BookShop20181019.DBUtility.pdb
+D:\C#workspace\BookShop20181019\DBUtility\bin\Debug\MySql.Data.dll
+D:\C#workspace\BookShop20181019\DBUtility\bin\Debug\System.Data.SQLite.DLL
+D:\C#workspace\BookShop20181019\DBUtility\obj\Debug\BookShop20181019.DBUtility.dll
+D:\C#workspace\BookShop20181019\DBUtility\obj\Debug\BookShop20181019.DBUtility.pdb
