@@ -8,7 +8,7 @@ namespace BookShop20181019.BLL
 	/// <summary>
 	/// Users
 	/// </summary>
-	public partial  class Users
+	public partial class Users
 	{
 		private readonly BookShop20181019.DAL.Users dal=new BookShop20181019.DAL.Users();
 		public Users()

@@ -12,3 +12,17 @@ D:\C#workspace\BookShop20181019\BLL\bin\Debug\BookShop20181019.DBUtility.pdb
 D:\C#workspace\BookShop20181019\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 D:\C#workspace\BookShop20181019\BLL\obj\Debug\BookShop20181019.BLL.dll
 D:\C#workspace\BookShop20181019\BLL\obj\Debug\BookShop20181019.BLL.pdb
+D:\gitRepository\BookShop20181019\BLL\bin\Debug\BookShop20181019.BLL.dll
+D:\gitRepository\BookShop20181019\BLL\bin\Debug\BookShop20181019.BLL.pdb
+D:\gitRepository\BookShop20181019\BLL\bin\Debug\BookShop20181019.DAL.dll
+D:\gitRepository\BookShop20181019\BLL\bin\Debug\BookShop20181019.Model.dll
+D:\gitRepository\BookShop20181019\BLL\bin\Debug\Maticsoft.Common.dll
+D:\gitRepository\BookShop20181019\BLL\bin\Debug\BookShop20181019.DBUtility.dll
+D:\gitRepository\BookShop20181019\BLL\bin\Debug\System.Data.SQLite.dll
+D:\gitRepository\BookShop20181019\BLL\bin\Debug\MySql.Data.dll
+D:\gitRepository\BookShop20181019\BLL\bin\Debug\BookShop20181019.DAL.pdb
+D:\gitRepository\BookShop20181019\BLL\bin\Debug\BookShop20181019.Model.pdb
+D:\gitRepository\BookShop20181019\BLL\bin\Debug\BookShop20181019.DBUtility.pdb
+D:\gitRepository\BookShop20181019\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\gitRepository\BookShop20181019\BLL\obj\Debug\BookShop20181019.BLL.dll
+D:\gitRepository\BookShop20181019\BLL\obj\Debug\BookShop20181019.BLL.pdb

@@ -10,3 +10,17 @@ D:\C#workspace\BookShop20181019\DAL\bin\Debug\BookShop20181019.Model.pdb
 D:\C#workspace\BookShop20181019\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 D:\C#workspace\BookShop20181019\DAL\obj\Debug\BookShop20181019.DAL.dll
 D:\C#workspace\BookShop20181019\DAL\obj\Debug\BookShop20181019.DAL.pdb
+D:\gitRepository\BookShop20181019\DAL\bin\Debug\BookShop20181019.DAL.dll
+D:\gitRepository\BookShop20181019\DAL\bin\Debug\BookShop20181019.DAL.pdb
+D:\gitRepository\BookShop20181019\DAL\bin\Debug\BookShop20181019.DBUtility.dll
+D:\gitRepository\BookShop20181019\DAL\bin\Debug\BookShop20181019.Model.dll
+D:\gitRepository\BookShop20181019\DAL\bin\Debug\Common.dll
+D:\gitRepository\BookShop20181019\DAL\bin\Debug\Maticsoft.Common.dll
+D:\gitRepository\BookShop20181019\DAL\bin\Debug\MySql.Data.dll
+D:\gitRepository\BookShop20181019\DAL\bin\Debug\System.Data.SQLite.dll
+D:\gitRepository\BookShop20181019\DAL\bin\Debug\Common.pdb
+D:\gitRepository\BookShop20181019\DAL\bin\Debug\BookShop20181019.DBUtility.pdb
+D:\gitRepository\BookShop20181019\DAL\bin\Debug\BookShop20181019.Model.pdb
+D:\gitRepository\BookShop20181019\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\gitRepository\BookShop20181019\DAL\obj\Debug\BookShop20181019.DAL.dll
+D:\gitRepository\BookShop20181019\DAL\obj\Debug\BookShop20181019.DAL.pdb

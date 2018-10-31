@@ -9,6 +9,7 @@ using Maticsoft.DBUtility;namespace BookShop20181019.DAL
 {
     partial class Users
     {
+        //根据用户名查询一个用户
         public Model.Users GetModel(string userName)
         {
             StringBuilder strSql = new StringBuilder();
@@ -29,6 +30,15 @@ using Maticsoft.DBUtility;namespace BookShop20181019.DAL
             {
                 return null;
             }
+        }
+
+
+        public int CheckUserEmail(string email) 
+        {
+            string sql = "select count(*) from users where Mail=@Mail";
+            SqlParameter parameter = new SqlParameter("@Mail",SqlDbType.NVarChar,50);
+            parameter.Value = email;
+            return Convert.ToInt32(DbHelperSQL.GetSingle(sql,parameter));
         }
     }
 }

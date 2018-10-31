@@ -32,5 +32,10 @@ namespace BookShop20181019.BLL
             return dal.GetModel(userName) != null ? true : false;
         }
 
+        public bool ValidateEmail(string email) 
+        {
+            return dal.CheckUserEmail(email) > 0 ? true : false;
+        }
+
     }
 }
