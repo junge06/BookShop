@@ -41,19 +41,32 @@
             $("#validateCode").blur(function() {
                 validateImageCode();
             });
-
+            //点击注册按钮
             $("#btnRegister").click(function () {
-                validateUserName();
-                validateUserPwd();
-                validateConfirmPwd();
-                validateEmail();
-                validateImageCode();
-
-                var pai = $("#aspnetForm").serialize();
-                $.post("ashx/Register.ashx", {"pai":pai}, function(data) {
-
+                if ($("#userName").val()=="") {
+                    $("#spanUserName").text("用户名不可为空");
+                    return false;
+                }
+                if ($("#email").val()=="") {
+                    $("#msg").text("邮箱不能为空");
+                    return false;
+                }
+                //var pars = $("#aspnetForm").serialize();
+                //$.post("ashx/Register.ashx", { "pars": pars }, function (data) {
+                //    alert(pars);
+                //});
+                var code = $("#validateCode").val();
+                var userName = $("#userName").val();
+                var userPwd = $("#userPwd").val();
+                var realName = $("#realName").val();
+                var email = $("#email").val();
+                var address = $("#address").val();
+                var telephone = $("#telephone").val();
+                $.post("ashx/Register.ashx",
+                    { "userName": userName, "userPwd": userPwd, "realName": realName, "email": email, "address": address, "telephone": telephone, "code": code },
+                    function (data) {
+                    alert(data);
                 });
-
 
             });
 
@@ -176,7 +189,7 @@
         <tr>
           <td width="24%" height="26" align="center" valign="top">真实姓名：</td>
           <td valign="top" width="37%" align="left">
-              <input type="text" name="txtRealName"/></td>          
+              <input type="text" name="txtRealName" id="realName"/></td>          
         </tr>
         <tr>
           <td width="24%" height="26" align="center" valign="top">密码：</td>
@@ -196,12 +209,12 @@
         <tr>
           <td width="24%" height="26" align="center" valign="top">地址：</td>
           <td valign="top" width="37%" align="left">
-              <input type="text" name="txtAddress"/></td>          
+              <input type="text" name="txtAddress" id="address"/></td>          
         </tr>
         <tr>
           <td width="24%" height="26" align="center" valign="top">手机：</td>
           <td valign="top" width="37%" align="left">
-              <input type="text" name="txtPhone"/></td>          
+              <input type="text" name="txtPhone" id="telephone"/></td>          
         </tr>
         <tr>
           <td width="24%" align="center" valign="top" class="auto-style1">

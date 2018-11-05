@@ -78,8 +78,13 @@
     <Content Include="Controls\checkright.ascx" />
     <Content Include="Controls\copyright.ascx" />
     <Content Include="Css\book_list.css" />
+    <Content Include="Css\border-anim-h.gif" />
+    <Content Include="Css\border-anim-v.gif" />
+    <Content Include="Css\border-h.gif" />
+    <Content Include="Css\border-v.gif" />
     <Content Include="Css\cart.css" />
     <Content Include="Css\demos.css" />
+    <Content Include="Css\imgareaselect-default.css" />
     <Content Include="Css\index.css" />
     <Content Include="Css\login.css" />
     <Content Include="Css\page_bottom_new.css" />
@@ -1175,6 +1180,7 @@
     <Content Include="Images\页面不存在.jpg" />
     <Content Include="js\jquery-1.7.1.js" />
     <Content Include="js\jquery-ui-1.8.2.custom.min.js" />
+    <Content Include="js\jquery.imgareaselect.min.js" />
     <Content Include="js\ui\i18n\jquery-ui-i18n.js" />
     <Content Include="js\ui\i18n\jquery.ui.datepicker-af.js" />
     <Content Include="js\ui\i18n\jquery.ui.datepicker-ar.js" />
@@ -1290,7 +1296,9 @@
     <Content Include="js\ui\minified\jquery.ui.tabs.min.js" />
     <Content Include="js\ui\minified\jquery.ui.widget.min.js" />
     <Content Include="Member\Css\Register.css" />
+    <Content Include="Member\CutPhoto.aspx" />
     <Content Include="Member\Js\Register.js" />
+    <Content Include="Member\Login.aspx" />
     <Content Include="Member\Register.aspx" />
     <Content Include="ShowMsg.aspx" />
     <Content Include="SWFUpload\handlers.js" />
@@ -1303,6 +1311,8 @@
     <Content Include="SWFUpload\swfupload.js" />
     <Content Include="SWFUpload\swfupload.swf" />
     <Content Include="SWFUpload\swfupload_fp9.swf" />
+    <Content Include="Test\TestPage.aspx" />
+    <Content Include="Test\TestSwfUploadImg.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -1344,13 +1354,36 @@
     <Compile Include="Master\MainMaster.Master.designer.cs">
       <DependentUpon>MainMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="Member\ashx\Login.ashx.cs">
+      <DependentUpon>Login.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Member\ashx\Register.ashx.cs">
       <DependentUpon>Register.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\ashx\Upload.ashx.cs">
+      <DependentUpon>Upload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\ashx\ValidateLogin.ashx.cs">
+      <DependentUpon>ValidateLogin.ashx</DependentUpon>
     </Compile>
     <Compile Include="Member\ashx\ValidateReg.ashx.cs">
       <DependentUpon>ValidateReg.ashx</DependentUpon>
     </Compile>
+    <Compile Include="Member\CutPhoto.aspx.cs">
+      <DependentUpon>CutPhoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\CutPhoto.aspx.designer.cs">
+      <DependentUpon>CutPhoto.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Member\Enum\UserStateEnum.cs" />
+    <Compile Include="Member\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Member\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1368,6 +1401,20 @@
     </Compile>
     <Compile Include="ShowMsg.aspx.designer.cs">
       <DependentUpon>ShowMsg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\TestPage.aspx.cs">
+      <DependentUpon>TestPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\TestPage.aspx.designer.cs">
+      <DependentUpon>TestPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\TestSwfUploadImg.aspx.cs">
+      <DependentUpon>TestSwfUploadImg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\TestSwfUploadImg.aspx.designer.cs">
+      <DependentUpon>TestSwfUploadImg.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -1409,6 +1456,7 @@
     <Folder Include="Admin\" />
     <Folder Include="Components\" />
     <Folder Include="Images\inc\" />
+    <Folder Include="ImageUpload\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Master\MainMaster.Master" />
@@ -1424,6 +1472,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Member\ashx\Register.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Member\ashx\Upload.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Member\ashx\Login.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Member\ashx\ValidateLogin.ashx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

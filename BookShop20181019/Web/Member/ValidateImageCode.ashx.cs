@@ -15,7 +15,7 @@ namespace BookShop20181019.Web.Member
         {
             context.Response.ContentType = "text/plain";
             ValidateCode validateCode = new ValidateCode();
-            string code = validateCode.CreateValidateCode(6);
+            string code = validateCode.CreateValidateCode(2);
             context.Session["validateCode"] = code;
             validateCode.CreateValidateGraphic(code,context);
         }

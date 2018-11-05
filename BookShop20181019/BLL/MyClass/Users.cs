@@ -37,5 +37,47 @@ namespace BookShop20181019.BLL
             return dal.CheckUserEmail(email) > 0 ? true : false;
         }
 
+        /// <summary>
+        /// 根据用户名找用户信息
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <returns></returns>
+        public Model.Users GetUserByName(string userName) 
+        {
+            return dal.GetModel(userName);
+        }
+
+        /// <summary>
+        /// 完成用户登录信息的校验
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <param name="userPwd"></param>
+        /// <param name="msg"></param>
+        /// <param name="user"></param>
+        /// <returns></returns>
+        public bool CheckUserInfo(string userName,string userPwd,out string msg,out Model.Users user)
+        {
+            user = dal.GetModel(userName);
+            if (user!=null)
+            {
+                if (user.LoginPwd==userPwd)
+                {
+                    msg = "登录成功";
+                    return true;
+                }
+                else
+                {
+                    msg = "用户名或者密码错误";
+                    return false;
+                }
+
+            }
+            else
+            {
+                msg = "此用户不存在";
+                return false;
+            }
+        }
+
     }
 }
