@@ -80,9 +80,6 @@ namespace BookShop20181019.Web.Member
                     cookie2.Expires = DateTime.Now.AddDays(7);
                     Response.Cookies.Add(cookie1);
                     Response.Cookies.Add(cookie2);
-
-
-                    
                 }
 
                 //单击登录按钮，会将隐藏域的值提交过来

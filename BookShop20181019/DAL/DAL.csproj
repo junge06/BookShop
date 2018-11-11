@@ -134,6 +134,7 @@
     <Compile Include="OrderBook.cs" />
     <Compile Include="Orders.cs" />
     <Compile Include="Publishers.cs" />
+    <Compile Include="Settings.cs" />
     <Compile Include="SysFun.cs" />
     <Compile Include="Users.cs" />
     <Compile Include="UserStates.cs" />

@@ -26,3 +26,5 @@ D:\gitRepository\BookShop20181019\BLL\bin\Debug\BookShop20181019.DBUtility.pdb
 D:\gitRepository\BookShop20181019\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 D:\gitRepository\BookShop20181019\BLL\obj\Debug\BookShop20181019.BLL.dll
 D:\gitRepository\BookShop20181019\BLL\obj\Debug\BookShop20181019.BLL.pdb
+D:\gitRepository\BookShop20181019\BLL\bin\Debug\Common.dll
+D:\gitRepository\BookShop20181019\BLL\bin\Debug\Common.pdb

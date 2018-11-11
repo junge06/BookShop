@@ -113,11 +113,16 @@
     <Compile Include="OrderBook.cs" />
     <Compile Include="Orders.cs" />
     <Compile Include="Publishers.cs" />
+    <Compile Include="Settings.cs" />
     <Compile Include="SysFun.cs" />
     <Compile Include="Users.cs" />
     <Compile Include="UserStates.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{6824aa11-7479-4991-ae29-a1bda3d8ae7b}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{9FE00521-3A8B-42B1-814E-585E99407B2E}</Project>
       <Name>DAL</Name>

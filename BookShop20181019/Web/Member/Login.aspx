@@ -58,6 +58,8 @@
                         <%}else{%>
                         <a href="Register.aspx?returnUrl=<%=ReturnUrl%>">注册</a>
                         <%} %>
+
+                        <a href="FindPWD.aspx">忘记密码</a>
                     </div>
                 </div>
                 <div>

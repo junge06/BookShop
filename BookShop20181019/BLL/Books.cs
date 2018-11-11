@@ -157,26 +157,27 @@ namespace BookShop20181019.BLL
 		}
 
 		/// <summary>
-		/// 分页获取数据列表
+		/// 获取总页数
 		/// </summary>
-		public int GetRecordCount(string strWhere)
+		public int GetRecordCount(int pageSize)
 		{
-			return dal.GetRecordCount(strWhere);
+            int recordCount = dal.GetRecordCount();
+            int pageCount = Convert.ToInt32(Math.Ceiling((double)recordCount/pageSize));
+            return pageCount;
 		}
 		/// <summary>
-		/// 分页获取数据列表
+		/// 获取指定范围的分页数据
 		/// </summary>
-		public DataSet GetListByPage(string strWhere, string orderby, int startIndex, int endIndex)
-		{
-			return dal.GetListByPage( strWhere,  orderby,  startIndex,  endIndex);
-		}
-		/// <summary>
-		/// 分页获取数据列表
-		/// </summary>
-		//public DataSet GetList(int PageSize,int PageIndex,string strWhere)
-		//{
-			//return dal.GetList(PageSize,PageIndex,strWhere);
-		//}
+        /// 
+        public List<Model.Books> GetPageList(int pageIndex, int pageSize) 
+        {
+            int start = (pageIndex - 1) * pageSize + 1;
+            int end = pageIndex * pageSize;
+            DataSet ds = dal.GetPageList(start,end);
+            return DataTableToList(ds.Tables[0]);
+        }
+
+
 
 		#endregion  BasicMethod
 		#region  ExtensionMethod
