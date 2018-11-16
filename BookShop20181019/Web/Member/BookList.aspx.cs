@@ -18,7 +18,9 @@ namespace BookShop20181019.Web.Member
                 BindBookList();
             }
         }
-
+        /// <summary>
+        /// 分页查询
+        /// </summary>
         private void BindBookList()
         {
             int pageIndex;
@@ -41,10 +43,24 @@ namespace BookShop20181019.Web.Member
             //this.BookListRepeater.DataSource = bookBll.GetModelList("");
             //this.BookListRepeater.DataBind();
         }
-
+        /// <summary>
+        /// 截取字符串
+        /// </summary>
+        /// <param name="str"></param>
+        /// <param name="length"></param>
+        /// <returns></returns>
         public string CutString(string str,int length)
         {
             return str.Length > length ? str.Substring(0, length) + "......" : str;
+        }
+
+
+        public string GetString(object obj)
+        {
+            DateTime t = Convert.ToDateTime(obj);
+            return "/HtmlPage/" + t.Year + "/" + t.Month + "/" + t.Day + "/";
+        
+        
         }
     }
 }

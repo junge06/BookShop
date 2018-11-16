@@ -3,6 +3,8 @@ using System.Data;
 using System.Collections.Generic;
 using Maticsoft.Common;
 using BookShop20181019.Model;
+using System.Web;
+using System.IO;
 namespace BookShop20181019.BLL
 {
 	/// <summary>
@@ -175,6 +177,24 @@ namespace BookShop20181019.BLL
             int end = pageIndex * pageSize;
             DataSet ds = dal.GetPageList(start,end);
             return DataTableToList(ds.Tables[0]);
+        }
+
+
+        public void CreateHtmlPage(int id)
+        {
+           Model.Books book = dal.GetModel(id);
+            //获取模板文件
+           string template = HttpContext.Current.Request.MapPath("/Template/BookTemplate.html");
+           string fileContent = File.ReadAllText(template);
+           fileContent = fileContent.Replace("$title", book.Title).Replace
+               ("$author", book.Author).Replace
+               ("$unitprice", book.UnitPrice.ToString("0.00")).Replace
+               ("$isbn", book.ISBN).Replace("$content", book.ContentDescription);
+           string dir = "/HtmlPage/" + book.PublishDate.Year + "/" + book.PublishDate.Month + "/" + book.PublishDate.Day + "/";
+           Directory.CreateDirectory(Path.GetDirectoryName(HttpContext.Current.Request.MapPath(dir)));
+            string fullDir = dir + book.Id + ".html";
+           File.WriteAllText(HttpContext.Current.Request.MapPath(fullDir),fileContent,System.Text.Encoding.UTF8);
+        
         }
 
 

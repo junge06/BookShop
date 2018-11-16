@@ -75,6 +75,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminManager\CreateStaticPage.aspx" />
     <Content Include="BookDetail.aspx" />
     <Content Include="Controls\checkright.ascx" />
     <Content Include="Controls\copyright.ascx" />
@@ -90,6 +91,7 @@
     <Content Include="Css\login.css" />
     <Content Include="Css\pageBarStyle.css" />
     <Content Include="Css\page_bottom_new.css" />
+    <Content Include="Css\tableStyle.css" />
     <Content Include="Css\themes\base\images\ui-anim_basic_16x16.gif" />
     <Content Include="Css\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Css\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -149,6 +151,15 @@
     <Content Include="Css\themes\ui-lightness\jquery.ui.tabs.css" />
     <Content Include="Css\themes\ui-lightness\jquery.ui.theme.css" />
     <Content Include="Global.asax" />
+    <Content Include="HtmlPage.html" />
+    <Content Include="HtmlPage\2001\5\1\4948.html" />
+    <Content Include="HtmlPage\2004\1\8\4944.html" />
+    <Content Include="HtmlPage\2005\5\1\4945.html" />
+    <Content Include="HtmlPage\2005\9\1\4947.html" />
+    <Content Include="HtmlPage\2006\11\1\4946.html" />
+    <Content Include="HtmlPage\2006\3\1\4939.html" />
+    <Content Include="HtmlPage\2006\6\1\4950.html" />
+    <Content Include="HtmlPage\2011\6\28\4943.html" />
     <Content Include="Images\06default_1018_28.gif" />
     <Content Include="Images\06default_1018_85.gif" />
     <Content Include="Images\06default_1018_93.gif" />
@@ -1315,11 +1326,19 @@
     <Content Include="SWFUpload\swfupload.js" />
     <Content Include="SWFUpload\swfupload.swf" />
     <Content Include="SWFUpload\swfupload_fp9.swf" />
+    <Content Include="TempLate\BookTempLate.html" />
     <Content Include="Test\TestPage.aspx" />
     <Content Include="Test\TestSwfUploadImg.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminManager\CreateStaticPage.aspx.cs">
+      <DependentUpon>CreateStaticPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminManager\CreateStaticPage.aspx.designer.cs">
+      <DependentUpon>CreateStaticPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BookDetail.aspx.cs">
       <DependentUpon>BookDetail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1483,6 +1502,7 @@
   <ItemGroup>
     <Folder Include="Admin\" />
     <Folder Include="Components\" />
+    <Folder Include="HtmlPage\2007\" />
     <Folder Include="Images\inc\" />
     <Folder Include="ImageUpload\" />
   </ItemGroup>

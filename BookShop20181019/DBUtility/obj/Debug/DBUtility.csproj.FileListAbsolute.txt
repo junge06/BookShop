@@ -10,3 +10,4 @@ D:\gitRepository\BookShop20181019\DBUtility\bin\Debug\MySql.Data.dll
 D:\gitRepository\BookShop20181019\DBUtility\bin\Debug\System.Data.SQLite.DLL
 D:\gitRepository\BookShop20181019\DBUtility\obj\Debug\BookShop20181019.DBUtility.dll
 D:\gitRepository\BookShop20181019\DBUtility\obj\Debug\BookShop20181019.DBUtility.pdb
+D:\gitRepository\BookShop20181019\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache

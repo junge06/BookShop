@@ -359,6 +359,8 @@ namespace BookShop20181019.DAL
             return Convert.ToInt32(DbHelperSQL.GetSingle(sql));
         }
 
+
+        //获取每次要查询的数量
         public DataSet GetPageList(int start,int end)
         {
             string sql = @"select * from(select * ,row_number() over(order by id) as num
@@ -380,33 +382,6 @@ namespace BookShop20181019.DAL
 
 
 
-
-
-		/// <summary>
-		/// 分页获取数据列表
-		/// </summary>
-		public DataSet GetListByPage(string strWhere, string orderby, int startIndex, int endIndex)
-		{
-			StringBuilder strSql=new StringBuilder();
-			strSql.Append("SELECT * FROM ( ");
-			strSql.Append(" SELECT ROW_NUMBER() OVER (");
-			if (!string.IsNullOrEmpty(orderby.Trim()))
-			{
-				strSql.Append("order by T." + orderby );
-			}
-			else
-			{
-				strSql.Append("order by T.Id desc");
-			}
-			strSql.Append(")AS Row, T.*  from Books T ");
-			if (!string.IsNullOrEmpty(strWhere.Trim()))
-			{
-				strSql.Append(" WHERE " + strWhere);
-			}
-			strSql.Append(" ) TT");
-			strSql.AppendFormat(" WHERE TT.Row between {0} and {1}", startIndex, endIndex);
-			return DbHelperSQL.Query(strSql.ToString());
-		}
 
 
 		#endregion  BasicMethod
