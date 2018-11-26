@@ -102,9 +102,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Articel_Words.cs" />
     <Compile Include="AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="BookComment.cs" />
     <Compile Include="Books.cs" />
     <Compile Include="Cart.cs" />
     <Compile Include="Categories.cs" />
@@ -115,6 +117,7 @@
     <Compile Include="SysFun.cs" />
     <Compile Include="Users.cs" />
     <Compile Include="UserStates.cs" />
+    <Compile Include="ViewModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

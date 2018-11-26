@@ -124,9 +124,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Articel_Words.cs" />
     <Compile Include="AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="BookComment.cs" />
     <Compile Include="Books.cs" />
     <Compile Include="Cart.cs" />
     <Compile Include="Categories.cs" />

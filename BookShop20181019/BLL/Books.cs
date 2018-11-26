@@ -189,7 +189,7 @@ namespace BookShop20181019.BLL
            fileContent = fileContent.Replace("$title", book.Title).Replace
                ("$author", book.Author).Replace
                ("$unitprice", book.UnitPrice.ToString("0.00")).Replace
-               ("$isbn", book.ISBN).Replace("$content", book.ContentDescription);
+               ("$isbn", book.ISBN).Replace("$content", book.ContentDescription).Replace("$bookId",book.Id.ToString());
            string dir = "/HtmlPage/" + book.PublishDate.Year + "/" + book.PublishDate.Month + "/" + book.PublishDate.Day + "/";
            Directory.CreateDirectory(Path.GetDirectoryName(HttpContext.Current.Request.MapPath(dir)));
             string fullDir = dir + book.Id + ".html";

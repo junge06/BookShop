@@ -6,3 +6,4 @@ D:\gitRepository\BookShop20181019\Common\bin\Debug\Common.dll
 D:\gitRepository\BookShop20181019\Common\bin\Debug\Common.pdb
 D:\gitRepository\BookShop20181019\Common\obj\Debug\Common.dll
 D:\gitRepository\BookShop20181019\Common\obj\Debug\Common.pdb
+D:\gitRepository\BookShop20181019\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
